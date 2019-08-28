@@ -31,9 +31,6 @@ export default function tweets (state={}, action) {
                         ...state[tweet.replyingTo],
                         replies: state[tweet.replyingTo].replies.concat([tweet.id])
                     }
-                    
-
-
                 }
             }
 
